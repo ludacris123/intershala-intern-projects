@@ -1,0 +1,35 @@
+.header {
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(30, 61, 67, 1) 0%, rgba(9, 9, 11, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 5vw;
+    padding-bottom: 15px;
+    box-shadow: 0px 1px 5px black;
+    outline: black;
+    color: white;
+    z-index: 100;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ece6e6, 0 0 30px #58e600, 0 0 40px #0051e6, 0 0 50px #50457b, 0 0 60px #062e13, 0 0 70px #064629;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .header {
+        padding-top: 15px;
+        font-size: 6.4vw;
+    }
+}
